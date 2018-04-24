@@ -37,6 +37,68 @@ else if(data==temp->data) return 1;
 else if( data<temp->data) return (search(temp->left,data));
 else return search(temp->right,data);
 }
+void postorder(struct Node* head)
+{
+    struct Node* temp = head;
+    while (temp && temp->visited == false) {
+ 
+        // Visited left subtree
+        if (temp->left && temp->left->visited == false)
+            temp = temp->left;
+ //Added by Keshav
+void postorder(struct Node* head)
+{
+    struct Node* temp = head;
+    while (temp && temp->visited == false) {
+ 
+        // Visited left subtree
+        if (temp->left && temp->left->visited == false)
+            temp = temp->left;
+ void postorder(struct Node* head)
+{
+    struct Node* temp = head;
+    while (temp && temp->visited == false) {
+ 
+        // Visited left subtree
+        if (temp->left && temp->left->visited == false)
+            temp = temp->left;
+ 
+        // Visited right subtree
+        else if (temp->right && temp->right->visited == false)                 
+            temp = temp->right;
+ 
+        // Print node
+        else {
+            printf("%d ", temp->data);
+            temp->visited = true;
+            temp = head;
+        }
+    }
+}
+        // Visited right subtree
+        else if (temp->right && temp->right->visited == false)                 
+            temp = temp->right;
+ 
+        // Print node
+        else {
+            printf("%d ", temp->data);
+            temp->visited = true;
+            temp = head;
+        }
+    }
+}
+        // Visited right subtree
+        else if (temp->right && temp->right->visited == false)                 
+            temp = temp->right;
+ 
+        // Print node
+        else {
+           cout<<temp->data<<"\n";
+            temp->visited = true;
+            temp = head;
+        }
+    }
+}
 int main()
 {
 int b,element;                                      
