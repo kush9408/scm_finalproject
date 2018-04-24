@@ -45,6 +45,26 @@ void postorder(struct Node* head)
         // Visited left subtree
         if (temp->left && temp->left->visited == false)
             temp = temp->left;
+<<<<<<< HEAD
+=======
+ //Added by Keshav
+void postorder(struct Node* head)
+{
+    struct Node* temp = head;
+    while (temp && temp->visited == false) {
+ 
+        // Visited left subtree
+        if (temp->left && temp->left->visited == false)
+            temp = temp->left;
+ void postorder(struct Node* head)
+{
+    struct Node* temp = head;
+    while (temp && temp->visited == false) {
+ 
+        // Visited left subtree
+        if (temp->left && temp->left->visited == false)
+            temp = temp->left;
+>>>>>>> origin12/keshav
  
         // Visited right subtree
         else if (temp->right && temp->right->visited == false)                 
