@@ -3,4 +3,4 @@
 1> Outcomes- Thorough revision of all the Git commands and their applications.
 
 
-2> Members: Kush,Abhinav,Keshav,Lakshika
+2> Members: Abhinav,Kush,Keshav,Lakshika
