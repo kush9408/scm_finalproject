@@ -183,6 +183,19 @@ void PreOrderTraversal(struct tNode *root)
 }     
 
 
+int findmax(node* root)
+{
+node* temp=root;
+if(temp==NULL) cout<<"empty tree"<<endl;
+while(temp->right!=NULL)
+{
+temp=temp->right;
+}
+return temp->data;
+}
+
+//Added function for finding max nodes
+
 int main()
 {
 int b,element;                                      
