@@ -182,6 +182,7 @@ void PreOrderTraversal(struct tNode *root)
   } /* end of while */ 
 }     
 
+<<<<<<< HEAD
 int findmin(node* root) // funtion added for minimum
 {
 node* temp=root;
@@ -197,6 +198,47 @@ else if(data==root->data) return 1;
 else if(data<=root->data) return search(root->left,data);
 else return search(root->right,data);
 }
+=======
+
+int findmax(node* root)
+{
+node* temp=root;
+if(temp==NULL) cout<<"empty tree"<<endl;
+while(temp->right!=NULL)
+{
+temp=temp->right;
+}
+return temp->data;
+}
+
+//Added function for finding max nodes
+
+
+int height(node* root)
+{
+int k=0,r=0;
+node* temp=root;
+if(temp==NULL) return 0;
+else
+{
+while(temp->left!=NULL)
+{
+temp=temp->left;
+k++;
+}
+}
+else
+{
+while(temp->right!=NULL)
+{
+temp=temp->right;
+r++;
+}
+}
+//Program to find height of binary tree
+
+
+>>>>>>> origin12/abhinav2
 int main()
 {
 int b,element;                                      
@@ -219,3 +261,8 @@ return 0;
                       / \   \
                      1   5   12
              */
+
+
+
+
+// 12 commits
