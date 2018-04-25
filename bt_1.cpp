@@ -196,6 +196,31 @@ return temp->data;
 
 //Added function for finding max nodes
 
+
+int height(node* root)
+{
+int k=0,r=0;
+node* temp=root;
+if(temp==NULL) return 0;
+else
+{
+while(temp->left!=NULL)
+{
+temp=temp->left;
+k++;
+}
+}
+else
+{
+while(temp->right!=NULL)
+{
+temp=temp->right;
+r++;
+}
+}
+//Program to find height of binary tree
+
+
 int main()
 {
 int b,element;                                      
