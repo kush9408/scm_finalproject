@@ -182,7 +182,21 @@ void PreOrderTraversal(struct tNode *root)
   } /* end of while */ 
 }     
 
-
+int findmin(node* root) // funtion added for minimum
+{
+node* temp=root;
+if(temp==NULL) {cout<<"..... TREE IS EMPTY ....."<<endl; return -1; }
+while(temp->left!=NULL)
+temp=temp->left;
+return temp->data;
+}
+int search(node* root,int data)
+{
+if(root==NULL) return 0;
+else if(data==root->data) return 1;
+else if(data<=root->data) return search(root->left,data);
+else return search(root->right,data);
+}
 int main()
 {
 int b,element;                                      
