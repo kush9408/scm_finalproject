@@ -253,6 +253,12 @@ cout<<"Enter the element to be searched from the tree"<<endl;
 cin>>element;
 if(search(root,element)==1) cout<<"Element found"<<endl;
 else cout<<"Element not found"<<endl;
+cout<<"Postorder traversal of the tree is /n";
+postorder(root);                                     //keshav added 
+function call to postorder
+cout<<endl<<"Inorder Traversal"<<endl;
+printinorder(root);
+cout<<endl<<"Preoder Traversal"<<endl;   
 return 0;
 }
               /*         6
